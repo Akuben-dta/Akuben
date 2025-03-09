@@ -16,39 +16,45 @@ In which location did machines break the most?
 What are the machines that broke most often in that location?
 
 
-ANSWERS
-Q1: In which location did machines break the most?
-Look at Sheet 1 (Factory Chart). The factory with the highest "unhealthy" count (failures) is the one where machines broke the most.
-?? From MY dashboard, it appears "Daikibo Factory Seiko (Osaka, Japan)" has the highest failures.
+Machine Failure Analysis - Daikibo Factories
+📊 A data-driven approach to understanding machine failures across four global factories.
 
+Project Overview
+This project analyzes telemetry data collected from Daikibo's four factories to identify:
+1️⃣ Which factory experienced the most machine failures?
+2️⃣ Which machine type was most prone to failure in that factory?
 
-Q2: What are the machines that broke most often in that location?
-Filter Sheet 2 (Device Type Chart) for only the highest-failure factory (Daikibo Factory Seiko).
-Identify the machine type with the highest "unhealthy" count.
-?? From My chart, it appears the "Laser" machine had the most 
-failures.
+Using Tableau, I visualized the dataset to extract key insights.
 
+Dataset Information
+📅 Time Period: May 2021 (1 month of telemetry data)
+🏭 Factories Covered:
+Daikibo Factory Meiyo (Tokyo, Japan)
+Daikibo Factory Seiko (Osaka, Japan)
+Daikibo Berlin (Berlin, Germany)
+Daikibo Shenzhen (Shenzhen, China)
+⚙️ Machines Tracked: 9 types (Each sending data every 10 mins)
+📁 Data Format: JSON
+Key Findings
+✅ Factory with Most Failures:
+🔹 Daikibo Factory Seiko (Osaka, Japan) had the highest failure rate.
 
+✅ Most Affected Machine Type:
+🔹 Laser machines experienced the most failures in Osaka.
 
-TASK 2
-We have processed all data on employee compensation and generated an Excel file (Equality Table.xlsx, available in the Resources) containing 3 columns:
+Visualizations
+I created Tableau dashboards to visualize and explore the failures across locations and machine types:
 
-Factory
-Job Role
-Equality Score (integer; ranging between -100 and +100; 0 is ideal)
-Here is your task:
+Factory Breakdown: Failure rates per location
+Machine Type Breakdown: Failures per machine type at Seiko factory
 
-Create a 4th column (Equality class), classifying the equality score into 3 types:
-Fair (+-10)
-Unfair (<-10 AND >10)
-Highly Discriminative (<-20 AND >20)
-Examples:
+Project Structure
+📂 data sets/ → Raw telemetry data (JSON)
+📂 image/ → Tableau visualizations
+📂 reports/ → Machine failure report and analysis
+📄 README.md → This document
 
-6 ? Fair
--9 ? Unfair
--30 ? Highly Discriminative
-Please find the Equality Table you need to edit in the resources below. When you are done, upload the edited version of the file.
-
- 
-ANSWER
-FILE CAN BE FOUND IN THE REPORT SECTION
+Tools Used
+Excel (for data preprocessing)
+Tableau (for visualization and dashboarding)
+Git/GitHub (for version control)
